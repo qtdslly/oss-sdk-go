@@ -1,0 +1,39 @@
+{
+    "dependencies": {
+        "oss-sdk-go": "v1.4.0",
+        "oss-sdk-go/internal/configsources": "v0.0.0-00010101000000-000000000000",
+        "oss-sdk-go/internal/endpoints/v2": "v2.0.0-00010101000000-000000000000",
+        "github.com/aws/smithy-go": "v1.4.0"
+    },
+    "files": [
+        "api_client.go",
+        "api_client_test.go",
+        "api_op_CreateConnector.go",
+        "api_op_CreateCustomPlugin.go",
+        "api_op_CreateWorkerConfiguration.go",
+        "api_op_DeleteConnector.go",
+        "api_op_DeleteCustomPlugin.go",
+        "api_op_DescribeConnector.go",
+        "api_op_DescribeCustomPlugin.go",
+        "api_op_DescribeWorkerConfiguration.go",
+        "api_op_ListConnectors.go",
+        "api_op_ListCustomPlugins.go",
+        "api_op_ListWorkerConfigurations.go",
+        "api_op_UpdateConnector.go",
+        "deserializers.go",
+        "doc.go",
+        "endpoints.go",
+        "generated.json",
+        "internal/endpoints/endpoints.go",
+        "internal/endpoints/endpoints_test.go",
+        "protocol_test.go",
+        "serializers.go",
+        "types/enums.go",
+        "types/errors.go",
+        "types/types.go",
+        "validators.go"
+    ],
+    "go": "1.15",
+    "module": "oss-sdk-go/service/kafkaconnect",
+    "unstable": false
+}

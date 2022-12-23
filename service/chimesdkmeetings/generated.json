@@ -1,0 +1,43 @@
+{
+    "dependencies": {
+        "oss-sdk-go": "v1.4.0",
+        "oss-sdk-go/internal/configsources": "v0.0.0-00010101000000-000000000000",
+        "oss-sdk-go/internal/endpoints/v2": "v2.0.0-00010101000000-000000000000",
+        "github.com/aws/smithy-go": "v1.4.0"
+    },
+    "files": [
+        "api_client.go",
+        "api_client_test.go",
+        "api_op_BatchCreateAttendee.go",
+        "api_op_BatchUpdateAttendeeCapabilitiesExcept.go",
+        "api_op_CreateAttendee.go",
+        "api_op_CreateMeeting.go",
+        "api_op_CreateMeetingWithAttendees.go",
+        "api_op_DeleteAttendee.go",
+        "api_op_DeleteMeeting.go",
+        "api_op_GetAttendee.go",
+        "api_op_GetMeeting.go",
+        "api_op_ListAttendees.go",
+        "api_op_ListTagsForResource.go",
+        "api_op_StartMeetingTranscription.go",
+        "api_op_StopMeetingTranscription.go",
+        "api_op_TagResource.go",
+        "api_op_UntagResource.go",
+        "api_op_UpdateAttendeeCapabilities.go",
+        "deserializers.go",
+        "doc.go",
+        "endpoints.go",
+        "generated.json",
+        "internal/endpoints/endpoints.go",
+        "internal/endpoints/endpoints_test.go",
+        "protocol_test.go",
+        "serializers.go",
+        "types/enums.go",
+        "types/errors.go",
+        "types/types.go",
+        "validators.go"
+    ],
+    "go": "1.15",
+    "module": "oss-sdk-go/service/chimesdkmeetings",
+    "unstable": false
+}

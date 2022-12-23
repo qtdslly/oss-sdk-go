@@ -1,0 +1,40 @@
+{
+    "dependencies": {
+        "oss-sdk-go": "v1.4.0",
+        "oss-sdk-go/internal/configsources": "v0.0.0-00010101000000-000000000000",
+        "oss-sdk-go/internal/endpoints/v2": "v2.0.0-00010101000000-000000000000",
+        "github.com/aws/smithy-go": "v1.4.0"
+    },
+    "files": [
+        "api_client.go",
+        "api_client_test.go",
+        "api_op_AddAttachmentsToSet.go",
+        "api_op_AddCommunicationToCase.go",
+        "api_op_CreateCase.go",
+        "api_op_DescribeAttachment.go",
+        "api_op_DescribeCases.go",
+        "api_op_DescribeCommunications.go",
+        "api_op_DescribeServices.go",
+        "api_op_DescribeSeverityLevels.go",
+        "api_op_DescribeTrustedAdvisorCheckRefreshStatuses.go",
+        "api_op_DescribeTrustedAdvisorCheckResult.go",
+        "api_op_DescribeTrustedAdvisorCheckSummaries.go",
+        "api_op_DescribeTrustedAdvisorChecks.go",
+        "api_op_RefreshTrustedAdvisorCheck.go",
+        "api_op_ResolveCase.go",
+        "deserializers.go",
+        "doc.go",
+        "endpoints.go",
+        "generated.json",
+        "internal/endpoints/endpoints.go",
+        "internal/endpoints/endpoints_test.go",
+        "protocol_test.go",
+        "serializers.go",
+        "types/errors.go",
+        "types/types.go",
+        "validators.go"
+    ],
+    "go": "1.15",
+    "module": "oss-sdk-go/service/support",
+    "unstable": false
+}

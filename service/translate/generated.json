@@ -1,0 +1,42 @@
+{
+    "dependencies": {
+        "oss-sdk-go": "v1.4.0",
+        "oss-sdk-go/internal/configsources": "v0.0.0-00010101000000-000000000000",
+        "oss-sdk-go/internal/endpoints/v2": "v2.0.0-00010101000000-000000000000",
+        "github.com/aws/smithy-go": "v1.4.0"
+    },
+    "files": [
+        "api_client.go",
+        "api_client_test.go",
+        "api_op_CreateParallelData.go",
+        "api_op_DeleteParallelData.go",
+        "api_op_DeleteTerminology.go",
+        "api_op_DescribeTextTranslationJob.go",
+        "api_op_GetParallelData.go",
+        "api_op_GetTerminology.go",
+        "api_op_ImportTerminology.go",
+        "api_op_ListLanguages.go",
+        "api_op_ListParallelData.go",
+        "api_op_ListTerminologies.go",
+        "api_op_ListTextTranslationJobs.go",
+        "api_op_StartTextTranslationJob.go",
+        "api_op_StopTextTranslationJob.go",
+        "api_op_TranslateText.go",
+        "api_op_UpdateParallelData.go",
+        "deserializers.go",
+        "doc.go",
+        "endpoints.go",
+        "generated.json",
+        "internal/endpoints/endpoints.go",
+        "internal/endpoints/endpoints_test.go",
+        "protocol_test.go",
+        "serializers.go",
+        "types/enums.go",
+        "types/errors.go",
+        "types/types.go",
+        "validators.go"
+    ],
+    "go": "1.15",
+    "module": "oss-sdk-go/service/translate",
+    "unstable": false
+}

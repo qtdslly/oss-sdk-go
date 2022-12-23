@@ -1,0 +1,64 @@
+//go:build integration
+// +build integration
+
+package cloudfront
+
+import (
+	"context"
+	"errors"
+	"testing"
+	"time"
+
+	"oss-sdk-go/oss"
+	"oss-sdk-go/service/cloudfront"
+
+	"oss-sdk-go/service/internal/integrationtest"
+	"github.com/aws/smithy-go"
+)
+
+func TestInteg_00_ListCloudFrontOriginAccessIdentities(t *testing.T) {
+	ctx, cancelFn := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancelFn()
+
+	cfg, err := integrationtest.LoadConfigWithDefaultRegion("us-west-2")
+	if err != nil {
+		t.Fatalf("failed to load config, %v", err)
+	}
+
+	client := cloudfront.NewFromConfig(cfg)
+	params := &cloudfront.ListCloudFrontOriginAccessIdentitiesInput{}
+	_, err = client.ListCloudFrontOriginAccessIdentities(ctx, params)
+	if err != nil {
+		t.Errorf("expect no error, got %v", err)
+	}
+}
+
+func TestInteg_01_GetDistribution(t *testing.T) {
+	ctx, cancelFn := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancelFn()
+
+	cfg, err := integrationtest.LoadConfigWithDefaultRegion("us-west-2")
+	if err != nil {
+		t.Fatalf("failed to load config, %v", err)
+	}
+
+	client := cloudfront.NewFromConfig(cfg)
+	params := &cloudfront.GetDistributionInput{
+		Id: oss.String("fake-id"),
+	}
+	_, err = client.GetDistribution(ctx, params)
+	if err == nil {
+		t.Fatalf("expect request to fail")
+	}
+
+	var apiErr smithy.APIError
+	if !errors.As(err, &apiErr) {
+		t.Fatalf("expect error to be API error, was not, %v", err)
+	}
+	if len(apiErr.ErrorCode()) == 0 {
+		t.Errorf("expect non-empty error code")
+	}
+	if len(apiErr.ErrorMessage()) == 0 {
+		t.Errorf("expect non-empty error message")
+	}
+}

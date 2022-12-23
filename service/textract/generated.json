@@ -1,0 +1,37 @@
+{
+    "dependencies": {
+        "oss-sdk-go": "v1.4.0",
+        "oss-sdk-go/internal/configsources": "v0.0.0-00010101000000-000000000000",
+        "oss-sdk-go/internal/endpoints/v2": "v2.0.0-00010101000000-000000000000",
+        "github.com/aws/smithy-go": "v1.4.0"
+    },
+    "files": [
+        "api_client.go",
+        "api_client_test.go",
+        "api_op_AnalyzeDocument.go",
+        "api_op_AnalyzeExpense.go",
+        "api_op_AnalyzeID.go",
+        "api_op_DetectDocumentText.go",
+        "api_op_GetDocumentAnalysis.go",
+        "api_op_GetDocumentTextDetection.go",
+        "api_op_GetExpenseAnalysis.go",
+        "api_op_StartDocumentAnalysis.go",
+        "api_op_StartDocumentTextDetection.go",
+        "api_op_StartExpenseAnalysis.go",
+        "deserializers.go",
+        "doc.go",
+        "endpoints.go",
+        "generated.json",
+        "internal/endpoints/endpoints.go",
+        "internal/endpoints/endpoints_test.go",
+        "protocol_test.go",
+        "serializers.go",
+        "types/enums.go",
+        "types/errors.go",
+        "types/types.go",
+        "validators.go"
+    ],
+    "go": "1.15",
+    "module": "oss-sdk-go/service/textract",
+    "unstable": false
+}

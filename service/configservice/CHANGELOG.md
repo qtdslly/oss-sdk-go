@@ -1,0 +1,203 @@
+# v1.26.1 (2022-09-20)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.26.0 (2022-09-14)
+
+* **Feature**: Fixed a bug in the API client generation which caused some operation parameters to be incorrectly generated as value types instead of pointer types. The service API always required these affected parameters to be nilable. This fixes the SDK client to match the expectations of the the service API.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.25.4 (2022-09-02)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.25.3 (2022-08-31)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.25.2 (2022-08-30)
+
+* No change notes available for this release.
+
+# v1.25.1 (2022-08-29)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.25.0 (2022-08-24)
+
+* **Feature**: AWS Config now supports ConformancePackTemplate documents in SSM Docs for the deployment and update of conformance packs.
+
+# v1.24.3 (2022-08-11)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.24.2 (2022-08-09)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.24.1 (2022-08-08)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.24.0 (2022-08-04)
+
+* **Feature**: Add resourceType enums for Athena, GlobalAccelerator, Detective and EC2 types
+
+# v1.23.1 (2022-08-01)
+
+* **Documentation**: Documentation update for PutConfigRule and PutOrganizationConfigRule
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.23.0 (2022-07-27)
+
+* **Feature**: This release adds ListConformancePackComplianceScores API to support the new compliance score feature, which provides a percentage of the number of compliant rule-resource combinations in a conformance pack compared to the number of total possible rule-resource combinations in the conformance pack.
+
+# v1.22.0 (2022-07-14)
+
+* **Feature**: Update ResourceType enum with values for Route53Resolver, Batch, DMS, Workspaces, Stepfunctions, SageMaker, ElasticLoadBalancingV2, MSK types
+
+# v1.21.5 (2022-07-05)
+
+* **Documentation**: Updating documentation service limits
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.21.4 (2022-06-29)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.21.3 (2022-06-07)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.21.2 (2022-05-17)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.21.1 (2022-04-25)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.21.0 (2022-04-06)
+
+* **Feature**: Add resourceType enums for AWS::EMR::SecurityConfiguration and AWS::SageMaker::CodeRepository
+
+# v1.20.1 (2022-03-30)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.20.0 (2022-03-24)
+
+* **Feature**: Added new APIs GetCustomRulePolicy and GetOrganizationCustomRulePolicy, and updated existing APIs PutConfigRule, DescribeConfigRule, DescribeConfigRuleEvaluationStatus, PutOrganizationConfigRule, DescribeConfigRule to support a new feature for building AWS Config rules with AWS CloudFormation Guard
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.19.1 (2022-03-23)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.19.0 (2022-03-14)
+
+* **Feature**: Add resourceType enums for AWS::ECR::PublicRepository and AWS::EC2::LaunchTemplate
+
+# v1.18.0 (2022-03-08)
+
+* **Feature**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.17.0 (2022-02-24)
+
+* **Feature**: API client updated
+* **Feature**: Adds RetryMaxAttempts and RetryMod to API client Options. This allows the API clients' default Retryer to be configured from the shared configuration files or environment variables. Adding a new Retry mode of `Adaptive`. `Adaptive` retry mode is an experimental mode, adding client rate limiting when throttles reponses are received from an API. See [retry.AdaptiveMode](https://pkg.go.dev/oss-sdk-go/oss/retry#AdaptiveMode) for more details, and configuration options.
+* **Feature**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.16.0 (2022-01-28)
+
+* **Feature**: Updated to latest API model.
+
+# v1.15.0 (2022-01-14)
+
+* **Feature**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.14.0 (2022-01-07)
+
+* **Feature**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.13.0 (2021-12-21)
+
+* **Feature**: API Paginators now support specifying the initial starting token, and support stopping on empty string tokens.
+* **Feature**: Updated to latest service endpoints
+
+# v1.12.2 (2021-12-02)
+
+* **Bug Fix**: Fixes a bug that prevented oss.EndpointResolverWithOptions from being used by the service client. ([#1514](https://oss-sdk-go/pull/1514))
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.12.1 (2021-11-19)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.12.0 (2021-11-12)
+
+* **Feature**: Service clients now support custom endpoints that have an initial URI path defined.
+
+# v1.11.0 (2021-11-06)
+
+* **Feature**: The SDK now supports configuration of FIPS and DualStack endpoints using environment variables, shared configuration, or programmatically.
+* **Feature**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.10.0 (2021-10-21)
+
+* **Feature**: API client updated
+* **Feature**: Updated  to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.9.2 (2021-10-11)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.9.1 (2021-09-17)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.9.0 (2021-09-02)
+
+* **Feature**: API client updated
+
+# v1.8.0 (2021-08-27)
+
+* **Feature**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.7.0 (2021-08-19)
+
+* **Feature**: API client updated
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.6.2 (2021-08-04)
+
+* **Dependency Update**: Updated `github.com/aws/smithy-go` to latest version.
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.6.1 (2021-07-15)
+
+* **Dependency Update**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.6.0 (2021-06-25)
+
+* **Feature**: Updated `github.com/aws/smithy-go` to latest version
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.5.1 (2021-05-20)
+
+* **Dependency Update**: Updated to the latest SDK module versions
+
+# v1.5.0 (2021-05-14)
+
+* **Feature**: Constant has been added to modules to enable runtime version inspection for reporting.
+* **Feature**: Updated to latest service API model.
+* **Dependency Update**: Updated to the latest SDK module versions
+

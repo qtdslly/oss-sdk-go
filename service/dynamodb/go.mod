@@ -1,0 +1,23 @@
+module oss-sdk-go/service/dynamodb
+
+go 1.15
+
+require (
+	oss-sdk-go v1.16.16
+	oss-sdk-go/internal/configsources v1.1.23
+	oss-sdk-go/internal/endpoints/v2 v2.4.17
+	oss-sdk-go/service/internal/accept-encoding v1.9.9
+	oss-sdk-go/service/internal/endpoint-discovery v1.7.17
+	github.com/aws/smithy-go v1.13.3
+	github.com/jmespath/go-jmespath v0.4.0
+)
+
+replace oss-sdk-go => ../../
+
+replace oss-sdk-go/internal/configsources => ../../internal/configsources/
+
+replace oss-sdk-go/internal/endpoints/v2 => ../../internal/endpoints/v2/
+
+replace oss-sdk-go/service/internal/accept-encoding => ../../service/internal/accept-encoding/
+
+replace oss-sdk-go/service/internal/endpoint-discovery => ../../service/internal/endpoint-discovery/

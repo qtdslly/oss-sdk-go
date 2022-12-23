@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "projections": {
+    "aws-ec2": {
+      "transforms": [
+        {
+          "name": "includeServices",
+          "args": {
+            "services": ["aws.protocoltests.ec2#AwsEc2"]
+          }
+        }
+      ],
+      "plugins": {
+        "go-codegen": {
+          "service": "aws.protocoltests.ec2#AwsEc2",
+          "module": "oss-sdk-go/internal/protocoltest/ec2query"
+        }
+      }
+    },
+    "aws-json": {
+      "transforms": [
+        {
+          "name": "includeServices",
+          "args": {
+            "services": ["aws.protocoltests.json#JsonProtocol"]
+          }
+        }
+      ],
+      "plugins": {
+        "go-codegen": {
+          "service": "aws.protocoltests.json#JsonProtocol",
+          "module": "oss-sdk-go/internal/protocoltest/jsonrpc"
+        }
+      }
+    },
+    "aws-json-10": {
+      "transforms": [
+        {
+          "name": "includeServices",
+          "args": {
+            "services": ["aws.protocoltests.json10#JsonRpc10"]
+          }
+        }
+      ],
+      "plugins": {
+        "go-codegen": {
+          "service": "aws.protocoltests.json10#JsonRpc10",
+          "module": "oss-sdk-go/internal/protocoltest/jsonrpc10"
+        }
+      }
+    },
+    "aws-query": {
+      "transforms": [
+        {
+          "name": "includeServices",
+          "args": {
+            "services": ["aws.protocoltests.query#AwsQuery"]
+          }
+        }
+      ],
+      "plugins": {
+        "go-codegen": {
+          "service": "aws.protocoltests.query#AwsQuery",
+          "module": "oss-sdk-go/internal/protocoltest/query"
+        }
+      }
+    },
+    "aws-restjson": {
+      "transforms": [
+        {
+          "name": "includeServices",
+          "args": {
+            "services": ["aws.protocoltests.restjson#RestJson"]
+          }
+        }
+      ],
+      "plugins": {
+        "go-codegen": {
+          "service": "aws.protocoltests.restjson#RestJson",
+          "module": "oss-sdk-go/internal/protocoltest/awsrestjson"
+        }
+      }
+    },
+    "aws-restxml": {
+      "transforms": [
+        {
+          "name": "includeServices",
+          "args": {
+            "services": ["aws.protocoltests.restxml#RestXml"]
+          }
+        }
+      ],
+      "plugins": {
+        "go-codegen": {
+          "service": "aws.protocoltests.restxml#RestXml",
+          "module": "oss-sdk-go/internal/protocoltest/restxml"
+        }
+      }
+    },
+    "aws-restxml-with-namespace": {
+      "transforms": [
+        {
+          "name": "includeServices",
+          "args": {
+            "services": ["aws.protocoltests.restxml.xmlns#RestXmlWithNamespace"]
+          }
+        }
+      ],
+      "plugins": {
+        "go-codegen": {
+          "service": "aws.protocoltests.restxml.xmlns#RestXmlWithNamespace",
+          "module": "oss-sdk-go/internal/protocoltest/restxmlwithnamespace"
+        }
+      }
+    }
+  }
+}
